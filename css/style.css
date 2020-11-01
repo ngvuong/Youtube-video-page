@@ -1,0 +1,71 @@
+body {
+  margin: 0;
+  height: 150vh;
+}
+
+/* nav top section */
+.bar-bg {
+  position: absolute;
+  width: 100%;
+  height: 56px;
+  background-color: white;
+}
+
+/* bar-icons svg */
+.bar-icons {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.bar-icons path {
+  fill: white;
+}
+
+.bar-sticky {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height: 56px;
+  background-color: rgba(33, 33, 33, 0.98);
+}
+
+.bar-section {
+  display: flex;
+  height: 40px;
+}
+
+.bar-left {
+  /* width: ; */
+}
+
+.hamburger-box {
+  padding: 0.5em;
+  margin-right: 1em;
+  background-color: inherit;
+  border: none;
+}
+
+/* .hamburger {
+  width: 5em;
+  height: 5em
+} */
+
+.logo img {
+  width: rem;
+  height: 10rem;
+}
+
+/* search bar */
+.bar-search {
+  height: 2em;
+}
+
+.video {
+  width: 1000px;
+  height: 480px;
+  left: 253.333px;
+  top: 0px;
+}

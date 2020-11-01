@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!--
+      1. nav/search bar fixed on top: 3 sub-sections
+        grid
+      2. video theater mode (theater mode with css)
+      3. section: video-about (title, view, likes,etc); video-description; video-comments
+      4. suggestions: up next vid, other suggested vid
+    -->
+    <div class="bar-bg"></div>
+    <nav class="bar-sticky">
+      <div class="bar-section bar-left">
+        <button class="hamburger-box">
+          <svg class="hamburger bar-icons" viewBox="0 0 24 24">
+            <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path>
+          </svg>
+        </button>
+
+        <div class="logo">
+          <img src="assets/yt-logo.svg" alt="youtube logo" />
+        </div>
+      </div>
+      <div class="bar-section bar-search">
+        <div class="search-full">
+          <input type="text" class="search-field" placeholder="Search" />
+          <button class="search-button" type="submit"></button>
+        </div>
+      </div>
+      <div class="bar-section bar-right">
+        <div class="create bar-icons">
+          <button class="bar-icons"></button>
+        </div>
+        <div class="apps bar-icons">
+          <button class="bar-icons"></button>
+        </div>
+        <div class="settings">
+          <button class="bar-icons"></button>
+        </div>
+        <div class="sign-in"></div>
+      </div>
+    </nav>
+    <!-- <iframe
+      class="video"
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/6avJHaC3C2U"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+    ></iframe> -->
+  </body>
+</html>
