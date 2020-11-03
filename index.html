@@ -4,17 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
     <title>Document</title>
   </head>
   <body>
-    <!--
-      1. nav/search bar fixed on top: 3 sub-sections
-        grid
-      2. video theater mode (theater mode with css)
-      3. section: video-about (title, view, likes,etc); video-description; video-comments
-      4. suggestions: up next vid, other suggested vid
-    -->
-    <div class="bar-bg"></div>
+
     <nav class="bar-sticky">
       <div class="bar-section bar-left">
         <button class="hamburger-box">
@@ -23,37 +17,259 @@
           </svg>
         </button>
 
-        <div class="logo">
+        <button class="logo">
           <img src="assets/yt-logo.svg" alt="youtube logo" />
-        </div>
+        </button>
       </div>
       <div class="bar-section bar-search">
         <div class="search-full">
-          <input type="text" class="search-field" placeholder="Search" />
-          <button class="search-button" type="submit"></button>
+          <input
+            type="text"
+            class="search-box"
+            placeholder="Search"
+          />
+          <button class="search-button" type="submit">
+            <img src="assets/search-icon.svg" alt="search-icon" />
+          </button>
         </div>
       </div>
       <div class="bar-section bar-right">
-        <div class="create bar-icons">
-          <button class="bar-icons"></button>
-        </div>
-        <div class="apps bar-icons">
-          <button class="bar-icons"></button>
-        </div>
-        <div class="settings">
-          <button class="bar-icons"></button>
-        </div>
-        <div class="sign-in"></div>
+        <button class="create bar-btn">
+          <img src="assets/create-icon.svg" alt="create-icon" />
+        </button>
+        <button class="bar-btn">
+          <img src="assets/apps-icon.svg" alt="apps-icon" />
+        </button>
+        <button class="bar-btn">
+          <img src="assets/settings-icon.svg" alt="settings-icon" />
+        </button>
+        <button class="sign-in-btn">
+          <img src="assets/sign-in.png" alt="" />
+        </button>
       </div>
     </nav>
-    <!-- <iframe
+    <iframe
       class="video"
-      width="560"
-      height="315"
       src="https://www.youtube.com/embed/6avJHaC3C2U"
       frameborder="0"
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
       allowfullscreen
-    ></iframe> -->
+    ></iframe>
+
+    <div class="video-below">
+      <section class="video-info-all">
+        <section class="video-info info-main special-border-bottom">
+          <div class="info-title">
+            <p class="title">The Art of Code - Dylan Beattie</p>
+          </div>
+          <div class="info-stats">
+            <div class="vc-upload">
+              <span class="view-count">743,652 views • Feb 26, 2020 </span>
+            </div>
+            <div class="misc">
+              <button class="stats-icon like">
+                <div class="like-container btn-container">
+                  <img src="assets/like-icon.svg" alt="like" />
+                  <span>28k</span>
+                </div>
+              </button>
+              <button class="stats-icon dislike">
+                <div class="dislike-container btn-container">
+                  <img src="assets/dislike-icon.svg" alt="dislike" />
+                  <span>347</span>
+                </div>
+              </button>
+
+              <button class="stats-icon share">
+                <div class="share-container btn-container">
+                  <img src="assets/share-icon.svg" alt="share" />
+                  <span>Share</span>
+                </div>
+              </button>
+
+              <button class="stats-icon save">
+                <div class="save-container btn-container">
+                  <img src="assets/save-icon.svg" alt="save" />
+                  <span>Save</span>
+                </div>
+              </button>
+              <button class="icon-other">
+                <img src="assets/others-icon.svg" alt="other" />
+              </button>
+              <img id="like-bar" src="assets/like-bar.png" alt="like bar" />
+            </div>
+          </div>
+        </section>
+        <section class="video-info info-description special-border-bottom">
+          <div class="description-top">
+            <a
+              href="https://www.youtube.com/channel/UCTdw38Cw6jcm0atBPA39a0Q"
+              class="channel-info"
+            >
+              <div class="channel-img">
+                <img src="https://yt3.ggpht.com/a/AATXAJxZibIdv6j3i4b3ZtQ4nBS0JFV5RnHCou7q5CPCVw=s88-c-k-c0xffffffff-no-rj-mo" alt="">
+              </div>
+              <div class="channel-name">
+                <span>
+                  NDC Conferences <br> </span>
+                  <span class="sub-stats">82.4K subscribers </span>
+              </div>
+            </a>
+            <div class="subcribe">
+              <button class="sub-btn">
+                <img src="assets/subscribe.PNG" alt="sub-button" />
+              </button>
+            </div>
+          </div>
+          <div class="description-content">
+            <p class="description-text"></p>
+              Software and technology has changed every aspect of the world we
+              live in. At one extreme are the ‘mission critical’ applications -
+              the code that runs our banks, our hospitals, our airports and
+              phone networks. Then there’s the code we all use every day to
+              browse the web, watch movies, create
+            </p>
+            <span>SHOW MORE</span>
+          </div>
+        </section>
+        <div class="comment-head">
+          <div class="comment-head-top">
+            <span>1,020 Comments</span>
+            <button class="sort-by">
+              <div class="btn-container">
+                <img src="assets/sort-by-icon.svg" alt="">
+                <span>SORT BY</span>
+              </div>
+            </button>
+          </div>
+          <div class="comment-head-box">
+            <div class="profile-thumbnail">
+              <!-- <img src="https://s.ytimg.com/yts/img/avatar_720-vflYJnzBZ.png" alt="anon"> -->
+            </div>
+            <input class="comment-input comment-body" type="text" placeholder="Add a public comment...">
+          </div>
+        </div>
+        <setion class="video-comments">
+          <div class="comment">
+            
+              <div class="profile-thumbnail"></div>
+              <div class="comment-body">
+                <span>
+                   <strong>ZeitgeistTv</strong> 7 months ago <br>
+                </span>
+                <span>This guy is a great orator/storyteller/and probably DnD master</span>
+                <div class="comment-like">
+                  <button>
+                    <img src="assets/like-icon.svg" alt="">
+                  </button>
+                  <span>5M</span>
+                  <button><img src="assets/dislike-icon.svg" alt=""></button>
+                  <span>REPLY</span>
+                  
+                </div>
+                <a class="replies" href="#">	
+                  &#9660; <span>View 27 replies</span></a>
+              </div>
+            
+            <div class="comment-replies"></div>
+          </div>
+          <div class="comment">
+            
+              <div class="profile-thumbnail"></div>
+              <div class="comment-body">
+                <span>
+                  <strong>SigmaSharp</strong> 7 months ago <br>
+                </span>
+                <span>6 years of university studies and another 6 years of practical computer development and I have never seen many of the things shown in this video. I have just shared it everywhere. Amazing content.</span>
+                <div class="comment-like">
+                  <button>
+                    <img src="assets/like-icon.svg" alt="">
+                  </button>
+                  <span>2.6K</span>
+                  <button><img src="assets/dislike-icon.svg" alt=""></button>
+                  <span>REPLY</span>
+                  
+                </div>
+                <a class="replies" href="#">	
+                  &#9660; <span>View 1 replies</span></a>
+              </div>
+            
+            <div class="comment-replies"></div>
+          </div>
+
+        </setion>
+      </section>
+
+      <section class="suggestions">
+        <div class="suggestion-upnext special-border-bottom">
+          <div class="upnext-head">
+            <span>Up next</span>
+            <div class="autoplay">
+              <span class="autoplay">AUTOPLAY</span>
+              <img src="assets/toggle-autoplay.PNG" alt="">
+            </div>
+          </div>
+          <a href="https://www.youtube.com/watch?v=ecIWPzGEbFc">
+            <div class="suggestion-content">
+              <div class="vid-thumbnail">
+                <img src="assets/vid1.PNG" alt="vid1">
+              </div>
+              <div class="vid-info">
+                <div class="vid-title">
+                  <span>"Uncle" Bob Martin - "The Future of Programming"</span>
+                </div>
+                <div class="vid-channel">
+                  <span>Paul Stringer's Mobile Tech </span> <br>
+                </div>
+                <div class="vid-stats">
+                  <span>1.5M views • 4 years ago</span>
+                </div>
+              </div>
+            </div>
+          </a>
+
+        </div>
+
+        <a href="https://www.youtube.com/watch?v=8JOD1AQGqEg">
+          <div class="suggestion-others">
+            <div class="suggestion-content">
+              <div class="vid-thumbnail">
+                <img src="assets/vid2.PNG" alt="vid1">
+              </div>
+              <div class="vid-info">
+                <div class="vid-title">
+                  <span>The Web That Never Was - Dylan Beattie</span>
+                </div>
+                <div class="vid-channel">
+                  <span>NDC Conferences</span> <br>
+                </div>
+                <div class="vid-stats">
+                  <span>10k views • 1 year ago</span>
+                </div>
+              </div>
+            </div>
+        </a>
+
+          <a href="https://www.youtube.com/watch?v=WXuK6gekU1Y">
+            <div class="suggestion-content">
+              <div class="vid-thumbnail">
+                <img src="assets/vid3.PNG" alt="vid1">
+              </div>
+              <div class="vid-info">
+                <div class="vid-title">
+                  <span>AlphaGo - The Movie | Full Documentary</span>
+                </div>
+                <div class="vid-channel">
+                  <span>Deep Mind</span> <br>
+                </div>
+                <div class="vid-stats">
+                  <span>8.5M views • 7 months ago</span>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </section>
+    </div>
   </body>
 </html>
