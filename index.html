@@ -9,7 +9,10 @@
   </head>
   <body>
 
+    <!-- Nav/Search bar on top, sticky as page is scrolled -->
     <nav class="bar-sticky">
+
+      <!-- First main section of bar: hamburger menu and logo -->
       <div class="bar-section bar-left">
         <button class="hamburger-box">
           <svg class="hamburger bar-icons" viewBox="0 0 24 24">
@@ -21,6 +24,8 @@
           <img src="assets/yt-logo.svg" alt="youtube logo" />
         </button>
       </div>
+
+      <!-- Second main section: search bar and button -->
       <div class="bar-section bar-search">
         <div class="search-full">
           <input
@@ -33,6 +38,8 @@
           </button>
         </div>
       </div>
+
+      <!-- Last main section: svgs through img tags -->
       <div class="bar-section bar-right">
         <button class="create bar-btn">
           <img src="assets/create-icon.svg" alt="create-icon" />
@@ -48,6 +55,8 @@
         </button>
       </div>
     </nav>
+
+    <!-- Embedding youtube video to resemble theater mode -->
     <iframe
       class="video"
       src="https://www.youtube.com/embed/6avJHaC3C2U"
@@ -56,8 +65,14 @@
       allowfullscreen
     ></iframe>
 
+    <!-- Start section below main video -->
     <div class="video-below">
+
+      <!-- Left side: main video title, stats; video description; video comments -->
+      <!-- Each sub-section separated by bottom border of the same style -->
       <section class="video-info-all">
+
+        <!-- Main info: title; stats; likes and dislikes -->
         <section class="video-info info-main special-border-bottom">
           <div class="info-title">
             <p class="title">The Art of Code - Dylan Beattie</p>
@@ -66,6 +81,8 @@
             <div class="vc-upload">
               <span class="view-count">743,652 views • Feb 26, 2020 </span>
             </div>
+            
+            <!-- Misc: likes; dislikes (button with container, more svg img) -->
             <div class="misc">
               <button class="stats-icon like">
                 <div class="like-container btn-container">
@@ -73,6 +90,7 @@
                   <span>28k</span>
                 </div>
               </button>
+
               <button class="stats-icon dislike">
                 <div class="dislike-container btn-container">
                   <img src="assets/dislike-icon.svg" alt="dislike" />
@@ -93,6 +111,7 @@
                   <span>Save</span>
                 </div>
               </button>
+
               <button class="icon-other">
                 <img src="assets/others-icon.svg" alt="other" />
               </button>
@@ -100,6 +119,8 @@
             </div>
           </div>
         </section>
+
+        <!-- Video description section: channel info; subcribe btn; description -->
         <section class="video-info info-description special-border-bottom">
           <div class="description-top">
             <a
@@ -121,6 +142,7 @@
               </button>
             </div>
           </div>
+
           <div class="description-content">
             <p class="description-text"></p>
               Software and technology has changed every aspect of the world we
@@ -132,6 +154,8 @@
             <span>SHOW MORE</span>
           </div>
         </section>
+
+        <!-- Comment section: comment head (new comment input); other comments -->
         <div class="comment-head">
           <div class="comment-head-top">
             <span>1,020 Comments</span>
@@ -142,16 +166,17 @@
               </div>
             </button>
           </div>
+          
           <div class="comment-head-box">
-            <div class="profile-thumbnail">
-              <!-- <img src="https://s.ytimg.com/yts/img/avatar_720-vflYJnzBZ.png" alt="anon"> -->
-            </div>
+            <div class="profile-thumbnail"></div>
             <input class="comment-input comment-body" type="text" placeholder="Add a public comment...">
           </div>
         </div>
+
+        <!-- Comment template: profile thumbnail; username and date commented; comment text 
+        like/dislike; replies -->
         <setion class="video-comments">
           <div class="comment">
-            
               <div class="profile-thumbnail"></div>
               <div class="comment-body">
                 <span>
@@ -170,11 +195,8 @@
                 <a class="replies" href="#">	
                   &#9660; <span>View 27 replies</span></a>
               </div>
-            
-            <div class="comment-replies"></div>
           </div>
           <div class="comment">
-            
               <div class="profile-thumbnail"></div>
               <div class="comment-body">
                 <span>
@@ -193,13 +215,15 @@
                 <a class="replies" href="#">	
                   &#9660; <span>View 1 replies</span></a>
               </div>
-            
-            <div class="comment-replies"></div>
           </div>
 
         </setion>
+
       </section>
 
+
+      <!-- Suggested videos: Main upnext video; other suggested videos -->
+      <!-- Template: video thumbnail; title; channel; stats -->
       <section class="suggestions">
         <div class="suggestion-upnext special-border-bottom">
           <div class="upnext-head">
@@ -209,6 +233,7 @@
               <img src="assets/toggle-autoplay.PNG" alt="">
             </div>
           </div>
+
           <a href="https://www.youtube.com/watch?v=ecIWPzGEbFc">
             <div class="suggestion-content">
               <div class="vid-thumbnail">
@@ -230,6 +255,7 @@
 
         </div>
 
+        <!-- Other suggested videos: same template -->
         <a href="https://www.youtube.com/watch?v=8JOD1AQGqEg">
           <div class="suggestion-others">
             <div class="suggestion-content">

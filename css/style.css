@@ -10,6 +10,8 @@ button {
   padding: 0;
 }
 
+/* Main sticky bar */
+
 .bar-sticky {
   display: flex;
   align-items: center;
@@ -23,13 +25,15 @@ button {
   background-color: rgba(33, 33, 33, 0.98);
 }
 
+/* All sections */
+
 .bar-section {
   display: flex;
   align-items: center;
   height: 40px;
 }
 
-/* bar-icons svg */
+/* all bar-icons svg */
 .bar-icons {
   width: 1.5rem;
   height: 1.5rem;
@@ -38,6 +42,8 @@ button {
 .bar-icons path {
   fill: white;
 }
+
+/* left section */
 
 .hamburger-box {
   padding: 0.5rem;
@@ -49,7 +55,7 @@ button {
   width: 130px;
 }
 
-/* search bar */
+/* search bar, middle section */
 .bar-search {
   display: flex;
   justify-content: center;
@@ -92,6 +98,8 @@ button {
   background-color: rgba(255, 255, 255, 0.08);
 }
 
+/* right section */
+
 .bar-right {
   min-width: 225px;
   justify-content: flex-end;
@@ -109,6 +117,8 @@ button {
   width: 105px;
   height: 43px;
 }
+
+/* Main video embed */
 
 .video {
   display: block;
@@ -128,9 +138,12 @@ button {
   padding-right: 24px;
 }
 
+/* common border-bottom style */
 .special-border-bottom {
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
+
+/* main info section below video */
 
 .info-main {
   padding: 20px 0 8px;
@@ -161,6 +174,8 @@ button {
   font-weight: 500;
   z-index: -1;
 }
+
+/* common button containers rules */
 
 .btn-container {
   display: flex;
@@ -194,6 +209,8 @@ button {
   width: 141px;
   height: 2px;
 }
+
+/* video description section */
 
 .info-description {
   padding-bottom: 16px;
@@ -241,6 +258,8 @@ button {
   margin-left: 64px;
 }
 
+/* Comment section */
+
 .comment-head {
   margin: 24px 0 32px;
 }
@@ -263,6 +282,9 @@ button {
   column-gap: 15px;
 }
 
+/* Profile template */
+
+/* common profile thumbnail */
 .profile-thumbnail {
   width: 40px;
   height: 40px;
@@ -310,6 +332,9 @@ button {
   color: rgb(6, 95, 212);
 }
 
+/* suggested section */
+
+/* suggestion template */
 .suggestions {
   display: flex;
   flex-direction: column;
@@ -330,7 +355,6 @@ button {
 .vid-info {
   display: flex;
   flex-direction: column;
-  /* row-gap: 5px; */
 }
 
 .suggestion-upnext {
